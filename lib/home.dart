@@ -153,8 +153,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 120),
-            Center(
+            const SizedBox(height: 100),
+           _result.isNotEmpty? Center(
               child: _isLoading
                   ? const CircularProgressIndicator() // Loader
                   : Card(
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-            ),
+            ):Container(),
           ],
         ),
       ),
